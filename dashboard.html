@@ -23,7 +23,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+    <script src="https://use.fontawesome.com/11aa3c0aea.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -55,15 +55,22 @@
 
 
     <div class="row">
-        <div class="col-2.5">
+        <div class="col-2.5 mynav">
             <div class="wrapper">
                 <!-- Sidebar -->
                 <nav id="sidebar">
                     <div class="sidebar-header">
-                        <img src="images/loginuser.jpg" alt="">
-                        &nbsp;
-                        Manasa U Hegde
-                        Super Admin
+                        <div id="profilepic" class="profile">
+                            <img src="images/loginuser.jpg" class="img-circle" alt="">
+                        </div>
+                        <div id="profilename" class="profile">
+                            <strong>Manasa U Hegde</strong>                         
+                        </div>
+                        <div id="profilerole" class="profile">
+                            Super Admin
+                        </div>
+                        <!-- &nbsp; -->
+
                     </div>
 
                     <ul class="list-unstyled components">
@@ -71,19 +78,30 @@
                         <!--  <i class='fas fa-desktop' style='font-size:36px'></i> -->
 
                         <li>
-
-                            <a href="login.html"> <i class='fab fa-microsoft' style='font-size:36px'></i> Dashboard</a>
+                            <div class="nav-bar-item active">
+                                <a href="login.html"> <i class='fab fa-microsoft' style='font-size:36px'></i> Dashboard</a>
+                            </div>
                         </li>
 
                         <li>
-
-                            <a href="#"><i class='fas fa-user-circle' style='font-size:36px'></i> Portfolio</a>
+                            <div class="nav-bar-item">
+                                <a href="#"><i class='fas fa-user-circle' style='font-size:36px'></i> Portfolio</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#"><i class='fas fa-lock' style='font-size:36px'></i> Configuration</a>
+                            <div class="nav-bar-item">
+                                <a href="#"><i class='fas fa-lock' style='font-size:36px'></i> Configuration</a>
+                            </div>
                         </li>
                         <li>
-                            <a href="#"><i class='fas fa-image' style='font-size:36px'></i> Content Manager</a>
+                            <div class="nav-bar-item">
+                                <a href="#"><i class='fas fa-image' style='font-size:36px'></i> Content Manager</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-bar-item">
+                                <a href="#"><i class="fa fa-power-off" aria-hidden="true" style='font-size:36px'></i> Log Out</a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -91,7 +109,7 @@
             </div>
         </div>
 
-        <div class="col-8"  >
+        <div class="col-8 main"  >
             <div>
                 <h2><b>Welcome to Apisocial by </b> <img src="images/logo.jfif" alt=""></h2> 
                 
@@ -101,28 +119,41 @@
             <div class="page-content page-container" id="page-content"  >
                 <div class="padding">
                     <div class="row container d-flex justify-content-center">
-                        <div class="container">
+                        <div class="container post">
                             <div class="box box-widget">
                                 <div class="box-header with-border">
-                                    <div class="user-block"> <img class="img-circle"
-                                            src="https://img.icons8.com/color/36/000000/guest-male.png"
-                                            alt="User Image">
-                                        <span class="username"><a href="#" data-abc="true">Manasa Hegde</a></span> <span
-                                            class="description">5:30 PM Today</span> </div>
-                                    <div class="box-tools"> <button type="button" class="btn btn-box-tool"
-                                            data-toggle="tooltip" title="" data-original-title="Mark as read"> <i
-                                                class="fa fa-circle-o"></i></button> <button type="button"
-                                            class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                                        </button> <button type="button" class="btn btn-box-tool" data-widget="remove"><i
-                                                class="fa fa-times"></i></button> </div>
-                                </div>
-                                <div class="box-body"> <img class="img-responsive pad" src="images/loginbg.jpg"
+                                    <div class="user-block">
+                                        <span class="post-title"><a href="#" data-abc="true">Best Steps for Mulesoft</a></span> 
+                                        <span class="description">asdlhasjdhasjkd sadgjasdsa dsf sdfsdfs asdgsdg dfgsdf asdasd </span> 
+                                    </div>
+                                    <!-- <div class="box-tools">
+                                        <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="" data-original-title="Mark as read"> 
+                                            <i class="fa fa-circle-o"></i>
+                                        </button> 
+                                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </button> 
+                                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                                            <i class="fa fa-times"></i>
+                                        </button> 
+                                    </div> -->
+                                    <div class="box-body"> <img class="img-responsive pad" src="images/loginbg.jpg"
                                         alt="Photo">
-                                    <p>Insert caption</p> <button type="button" class="btn btn-default btn-xs"><i
-                                            class="fa fa-share"></i> Share</button> <button type="button"
-                                        class="btn btn-default btn-xs"><i class="fa fa-thumbs-o-up"></i> Like</button>
-                                    <span class="pull-right text-muted">127 likes - 3 comments</span>
+                                        <div class="button-box">
+                                            <button type="button" class="btn btn-default btn-md share-btn">
+                                                <i class="fa fa-share"></i> Share
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-md like-btn">
+                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i> Like
+                                            </button>
+                                            <button type="button" class="btn btn-default btn-md pin-btn pull-right">
+                                                <i class="fa fa-map-pin" aria-hidden="true"></i> Pin
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
+                                
 
                             </div>
                         </div>
