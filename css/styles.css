@@ -1,0 +1,54 @@
+html, body {
+    height: 100%;
+  }
+
+.full-height{
+    height: 100%;
+
+}
+
+.row{
+    height: 100%;
+}
+
+
+.leftlogin{
+    width:   100%;
+    height: 100%;
+    background-image: url('../images/loginbg.jpg');
+    background-size: cover;    
+}
+
+.loginspace{
+    height: 20%;
+}
+
+.user-image{
+    text-align: center;
+    height:100px;
+
+}
+
+.social-login{
+    text-align: center;
+}
+
+.loginbtn{
+    border-radius: 25px;
+    width: 200px;
+    background:#0952A2;
+    text-align: center;
+    color: white;
+    font-size: large;
+    border: none;
+}
+
+.loginbtn:hover{
+    border-radius: 25px;
+    width: 200px;
+    background:blue;
+    text-align: center;
+    color: white;
+    font-size: large;
+    border:none;
+}
