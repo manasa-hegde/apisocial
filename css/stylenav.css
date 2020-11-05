@@ -374,3 +374,20 @@ ul ul a {
      background-color: #fff
  }
 
+ #table-head{
+    background-color:#f77b00;
+ }
+
+ .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  #point{
+      color:#03befc;
+      font-weight: bolder;
+  }
+  
+
