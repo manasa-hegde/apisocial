@@ -58,6 +58,7 @@ a[data-toggle="collapse"] {
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    overflow-x: hidden;
 }
 
 p {
@@ -104,10 +105,12 @@ a, a:hover, a:focus {
     font-size: 1.1em;
     display: block;
 }
-#sidebar ul li a:hover {
+
+/* #sidebar ul li a:hover {
     background: #7386D5;
     color: #fff;
-}
+    size: 100%;
+} */
 
 /* #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
@@ -128,9 +131,13 @@ ul ul a {
     align-self: center;
 }
 
-.active{
+.nav-bar-item:hover{
+    background-color: #a9c1e9;
+}
 
-    background:#a9c1e9;
+.nav-bar-item:active{
+
+    /* background:#a9c1e9; */
     font-weight: bold;
 }
 
@@ -177,6 +184,7 @@ ul ul a {
      padding: 3rem
  }
 
+
 .post{
     background-color: rgb(186, 213, 228);
     border-radius: 10px;
@@ -199,9 +207,9 @@ ul ul a {
      height:80px
  }
 
- .box-header.with-border {
+ /* .box-header.with-border {
      /* border-bottom: 1px solid #f4f4f4 */
- }
+ 
 
  .box-header {
      color: #444;
@@ -217,10 +225,11 @@ ul ul a {
  }
 
  .user-block .post-title {
-     font-size: 5vw;
+     font-size: 30px;
      font-weight: 600;
      font-weight: bold;
      color: black;
+     padding-bottom: 30px;
  }
 
  .post-title a {
@@ -229,7 +238,8 @@ ul ul a {
 
  .user-block .description {
      color: black;
-     font-size: 2.5vw;
+     font-size: 15px;
+     padding-top: 5px;
  }
 
  .user-block .post-title,
@@ -364,7 +374,3 @@ ul ul a {
      background-color: #fff
  }
 
- 
-
-
- 
