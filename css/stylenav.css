@@ -14,9 +14,20 @@
     max-width: 250px;
 }
 
-#sidebar.active {
-    margin-left: -250px;
+
+.profile{
+
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
 }
+
+
+/* #sidebar.active {
+    margin-left: -250px;
+} */
 
 #sidebar {
     min-width: 250px;
@@ -38,6 +49,11 @@ a[data-toggle="collapse"] {
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+.list-unstyled>li:last-child {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -63,6 +79,9 @@ a, a:hover, a:focus {
     background: #79a7f7;
     color: #fff;
     transition: all 0.3s;
+    height: 100%; 
+    position: fixed; /* Make it stick, even on scroll
+    /* overflow: auto; */ 
 }
 
 #sidebar .sidebar-header {
@@ -71,14 +90,14 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    /* padding: 20px; */
     border-bottom: 1px solid #79a7f7;
 }
 
-#sidebar ul p {
+/* #sidebar ul p {
     color: #fff;
     padding: 10px;
-}
+} */
 
 #sidebar ul li a {
     padding: 10px;
@@ -86,22 +105,40 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
+    background: #7386D5;
+    color: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+/* #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background:#79a7f7;
-}
+} */
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #79a7f7;
 }
 
+.nav-bar-item{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    color: black;
+    align-self: center;
+}
+
+.active{
+
+    background:#a9c1e9;
+    font-weight: bold;
+}
 
 
+.main{
+    margin-left: 300px;
+
+}
 /* CSS for post */
  /*  .container {
      margin-bottom: 500px
@@ -122,7 +159,9 @@ ul ul a {
      flex: 1 1 auto
  }
 
- @media (max-width:991.98px) {
+
+
+    @media (max-width:991.98px) {
      .padding {
          padding: 1.5rem
      }
@@ -138,16 +177,22 @@ ul ul a {
      padding: 3rem
  }
 
+.post{
+    background-color: rgb(186, 213, 228);
+    border-radius: 10px;
+    padding: 20px;
+}
  .box-widget {
      border: none;
-     position: relative
+     position: relative;
+     /* padding-bottom: 25px; */
  }
 
  .box {
      position: relative;
      border-radius: 3px;
-     background: #ffffff;
-     border-top: 3px solid #d2d6de;
+     /* background: #9dcbf1; */
+     /* border-top: 3px solid #d2d6de; */
      margin-bottom: 20px;
      width: 100%;
      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
@@ -155,7 +200,7 @@ ul ul a {
  }
 
  .box-header.with-border {
-     border-bottom: 1px solid #f4f4f4
+     /* border-bottom: 1px solid #f4f4f4 */
  }
 
  .box-header {
@@ -165,38 +210,29 @@ ul ul a {
      position: relative
  }
 
- .user-block img {
-     width: 40px;
-     height: 40px;
-     float: left
- }
+
 
  .img-circle {
      border-radius: 50%
  }
 
- .user-block .username {
-     font-size: 16px;
-     font-weight: 600
+ .user-block .post-title {
+     font-size: 5vw;
+     font-weight: 600;
+     font-weight: bold;
+     color: black;
  }
 
- .username a {
+ .post-title a {
      text-decoration: none
  }
 
- .user-block .username,
- .user-block .description,
- .user-block .comment {
-     display: block;
-     margin-left: 50px
- }
-
  .user-block .description {
-     color: #999;
-     font-size: 13px
+     color: black;
+     font-size: 2.5vw;
  }
 
- .user-block .username,
+ .user-block .post-title,
  .user-block .description,
  .user-block .comment {
      display: block;
@@ -213,29 +249,23 @@ ul ul a {
      display: table
  }
 
- .box-header>.box-tools {
+ /* .box-header>.box-tools {
      position: absolute;
      right: 10px;
      top: 5px
- }
+ } */
 
- .box-header>.box-tools [data-toggle="tooltip"] {
+ /* .box-header>.box-tools [data-toggle="tooltip"] {
      position: relative
- }
+ } */
 
- .btn {
-     border-radius: 3px;
-     -webkit-box-shadow: none;
-     box-shadow: none;
-     border: 1px solid transparent
- }
 
- .btn-box-tool {
+ /* .btn-box-tool {
      padding: 5px;
      font-size: 12px;
      background: transparent;
      color: #97a0b3
- }
+ } */
 
  .box-header:after,
  .box-body:after,
@@ -248,7 +278,8 @@ ul ul a {
      border-top-right-radius: 0;
      border-bottom-right-radius: 3px;
      border-bottom-left-radius: 3px;
-     padding: 10px
+     padding: 10px;
+     background:9dcbf1;
  }
 
  .pad {
@@ -275,10 +306,11 @@ ul ul a {
  }
 
  .btn {
-     border-radius: 3px;
+     border-radius: 20px;
      -webkit-box-shadow: none;
      box-shadow: none;
-     border: 1px solid transparent
+     border: 1px solid transparent;
+     min-width: 150px;
  }
 
  .btn-group-xs>.btn,
@@ -290,14 +322,38 @@ ul ul a {
  }
 
  .btn-default {
-     color: #333;
-     background-color: #fff;
-     border-color: #ccc
+     color: rgb(255, 255, 255);
+     background-color: rgb(10, 10, 10);
+     /* border-color: rgb(10, 10, 10) */
  }
 
  .pull-right {
      float: right !important
  }
+
+ .share-btn{
+     background-color: rgb(12, 12, 134);
+}
+
+.share-btn:hover{
+    background-color: white;
+    color: rgb(12, 12, 134);
+}
+.like-btn{
+    background-color: rgb(197, 96, 56);
+}
+.like-btn:hover{
+    background-color: white ;
+    color: rgb(197, 96, 56);
+}
+.pin-btn{
+    background-color: rgb(38, 12, 134);
+}
+.pin-btn:hover{
+    background-color: white;
+    color: rgb(38, 12, 134);
+}
+
 
  .text-muted {
      color: #777;
