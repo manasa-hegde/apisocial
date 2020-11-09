@@ -64,7 +64,7 @@
                             <img src="images/loginuser.jpg" class="img-circle" alt="">
                         </div>
                         <div id="profilename" class="profile">
-                            <strong>Manasa U Hegde</strong>                         
+                            <strong>Manasa U Hegde</strong>
                         </div>
                         <div id="profilerole" class="profile">
                             Super Admin
@@ -95,19 +95,9 @@
                         </li>
                         <li>
                             <div class="nav-bar-item">
-                                <a href="leaderboard.html"><i class='fa fa-lock fa-lg' ></i>  Leaderboard</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-bar-item">
                                 <a href="./contentmanager.html"><i class='fa fa-image fa-lg' ></i>  Content Manager</a>
                             </div>
                         </li>
-                        <li>
-                            <div class="nav-bar-item">
-                                <a href="./profilepage.html"><i class='fa fa-user fa-lg'></i> My Profile</a>
-                            </div>
-                        </li>  
                         <li>
                             <div class="nav-bar-item">
                                 <a href="#"><i class="fa fa-power-off fa-lg" aria-hidden="true" ></i> Log Out</a>
@@ -120,32 +110,76 @@
         </div>
 
         <div class="col-8 main"  >
-            <div>
-                <h2><b>Welcome to Apisocial by </b> <img src="images/logo.jfif" alt="" height="100px" style="padding-left: 70px;"></h2> 
-                
-            </div>
-           
-            <br>
-            <div class="page-content page-container" id="page-content"  >
-                <div class="padding">
-                    <div class="row container d-flex justify-content-center">
-                        <div class="container">
-                            <h2>Create a New Post</h2>
-                            <div class="md-form">
-                                <textarea id="form7" class="md-textarea form-control" rows="10" placeholder="Type your Post here..."></textarea>
-                              </div>
-                              <button type="button" class="btn btn-warning" style="margin-top: 10px;"><span class="fa fa-bookmark fa-lg"></span> Save as Draft</button>
-                              <button type="button" class="btn btn-info" style="margin-top: 10px;"><span class="fa fa-share-alt-square fa-lg"></span> Publish</button>
-                              <button type="button" class="btn btn-primary" style="margin-top: 10px;"><span class="fa fa-share-alt fa-lg"></span> Publish and Share</button>
-                              <button type="button" class="btn btn-danger" style="margin-top: 10px;"><span class="fa fa-trash fa-lg"></span> Delete</button>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
+            <div style="text-align:center">
+                <h2><b>Welcome to Apisocial by </b> <img src="images/logo.jfif" alt="" height="100px" style="padding-left: 70px; "></h2>
+
             </div>
 
+            <div style="text-align:center" class="">
+
+
+            <br>
+            <p style="font-size:28px;font-weight:bold;color:black"> Apisocial Configuration Settings </p>
+            <br>
+
+            <div style="border:3px solid blue; border-radius:25px; padding:25px; text-align:center">
+                <p style="text-align:center; font-weight:bold ;color:black;font-size: 20px">LinkedIn Settings</p>
+                <p style="color:black;font-weight:bold">
+                  Company Username
+                  <span>
+                    <input style="text-align:center" type="text" name="gender" value="Apisero Inc."  , oninput="">
+                  </span>
+                </p>
+            </div>
+            <br><br>
+
+            <div style="border:3px solid blue; border-radius:25px; padding:25px; text-align:center">
+                <p style="text-align:center; font-weight:bold ;color:black;font-size: 20px">Slack Settings</p>
+                <p style="color:black;font-weight:bold">
+                  Slack Workspace
+                  <span>
+                    <input style="text-align:center" type="text" name="Workspace" value="Apisero Inc."  , oninput="">
+                  </span>
+                </p>
+                <p style="color:black;font-weight:bold">
+                  Channel
+                  <span>
+                    <input style="text-align:center" type="text" name="Channel" value="#General"  , oninput="">
+                  </span>
+                </p>
+            </div>
+
+            <br><br>
+
+            <div style="border:3px solid blue; border-radius:25px; padding:25px; text-align:center">
+                <p style="text-align:center; font-weight:bold ;color:black;font-size: 20px">Leaderboard Refresh Interval</p>
+                <p style="color:black;font-weight:bold">
+                  Frequency
+                  <span>
+                    <input style="text-align:center" type="text" name="Frequency" value="1"  , oninput="">
+                  </span>
+                </p>
+                <p style="color:black;font-weight:bold">
+                  Frequency Unit
+                  <select name="F_unit" id="">
+                  <option value="Seconds">Seconds</option>
+                  <option value="Minutes">Minutes</option>
+                  <option value="Hours">Hours</option>
+                  <option value="Days">Days</option>
+                  </select>
+                </p>
+            </div>
+
+          </div>
+
+          <footer style="padding:20px">
+          </footer>
+
         </div>
+
+
+
+
     </div>
 
 
